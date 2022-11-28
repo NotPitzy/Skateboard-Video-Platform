@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Skateboard Video Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" type="module" defer></script>
+
+    <script src="https://kit.fontawesome.com/ed64d234be.js" crossorigin="anonymous"></script>
+    <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+</head>
+<body>
+    <img src="assets/background.jpg" class="background">
+    <div class="app">
+        <nav class="sidebar" data-sidebar>
+            <h1 class="sidebar__title">
+                skateboard
+            </h1>
+        </nav>
+        <div class="main">
+            <nav class="main__nav">
+                <div class="nav__search">
+                    <input placeholder="Search">
+                    <i class="fa-solid fa-search"></i>
+                </div>
+                <div class="nav__user">
+                    <div class="user__info">
+                        <img src="https://images.unsplash.com/photo-1587918842454-870dbd18261a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=943&q=80">
+                        <span>Thomas</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <i class="fa-solid fa-bell notifications"></i>
+                </div>
+            </nav>
+            <div class="main__content">
+                <div class="discover page active" data-page="discover">
+                    <section class="blogs section">
+                        <h1 class="section__title">Discover</h1>
+                        <div class="blogs__blogs" data-blogs></div>
+                    </section>
+                    <section class="most-watched section">
+                        <h1 class="section__title">Most Watched</h1>
+                        <div class="most-watched__videos" data-most-watched-videos></div>
+                    </section>
+                </div>
+                <div class="trending page section" data-page="trending">
+                    <div class="trending__video" data-video>
+                        <!-- <div class="left-section"> -->
+                            <div class="video__wrapper" data-video-wrapper>
+                                <video poster="https://images.unsplash.com/photo-1476801071117-fbc157ae3f01?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDh8fHxlbnwwfHx8&w=1000&q=80">
+                                </video>
+                                <button class="video__play" data-play-video>
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                                <div class="video__control-bar" data-video-control-bar>
+                                    <span class="live">live</span>
+                                    <i class="fa-solid fa-play" data-play-pause></i>
+                                    <div class="progress-bar" data-progress-bar>
+                                    </div>
+                                    <div class="move-to" data-move-to>0:00</div>
+                                    <div class="change-playback-rate" data-playback-rates>
+                                        <button class="active">1x</button>
+                                        <button>2x</button>
+                                    </div>
+                                    <i class="fa-solid fa-expand" data-full-screen></i>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                        <!-- <div class="right-section"> -->
+                            <div class="trending__live-chat">
+                                <div class="live-chat__header">
+                                    <h3>Live Chat</h3>
+                                    <div>
+                                        <i class="fa-solid fa-user-group"></i>
+                                        <span>15,988 people</span>
+                                    </div>
+                                </div>
+                                <div class="live-chat__messages" data-live-chat-messages>
+                                </div>
+                                <div class="live-chat__write-message">
+                                    <input placeholder="Write your message">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                    </input>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                    <div class="trending__video-info">
+                        <div class="video-info__details" data-video-details></div>
+                        <div class="video-info__related-videos">
+                            <h3 class="section__title">Related Videos</h3>
+                            <div class="related-videos__videos" data-related-videos></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
